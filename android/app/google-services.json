@@ -1,0 +1,67 @@
+{
+  "project_info": {
+    "project_number": "599110020532",
+    "project_id": "rapidcart-bdf9b",
+    "storage_bucket": "rapidcart-bdf9b.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:599110020532:android:bd1ea475d1d7c6de5e56e1",
+        "android_client_info": {
+          "package_name": "com.example.rapid_cart"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCWMtNkv7oDlv1HTeoCtGIfP01c__lhjiQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:599110020532:android:6a91dae4bdc9dc3e5e56e1",
+        "android_client_info": {
+          "package_name": "dev.sarthakag.blinkit.ecom"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCWMtNkv7oDlv1HTeoCtGIfP01c__lhjiQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:599110020532:android:f74d3c80c1aaa94e5e56e1",
+        "android_client_info": {
+          "package_name": "dev.sarthakag.rapidcart.ecom"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCWMtNkv7oDlv1HTeoCtGIfP01c__lhjiQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
