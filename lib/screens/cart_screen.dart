@@ -56,15 +56,7 @@ class CartScreen extends StatelessWidget {
                 FilledButton(
                   onPressed: items.isEmpty
                       ? null
-                      : () async {
-                          final user = context.read<AuthProvider>().currentUser;
-                          if (user == null) return;
-                          await context.read<OrdersProvider>().placeOrder(userId: user.uid, items: items);
-                          if (context.mounted) {
-                            context.read<CartProvider>().clear();
-                            ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('Order placed!')));
-                          }
-                        },
+                      : () => Navigator.of(context).pushNamed('/checkout'),
                   child: const Text('Checkout'),
                 )
               ],

@@ -10,14 +10,22 @@ import 'orders_screen.dart';
 import 'profile_screen.dart';
 
 class HomeScreen extends StatefulWidget {
-  const HomeScreen({super.key});
+  final int initialTab;
+  
+  const HomeScreen({super.key, this.initialTab = 0});
 
   @override
   State<HomeScreen> createState() => _HomeScreenState();
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  int _index = 0;
+  late int _index;
+
+  @override
+  void initState() {
+    super.initState();
+    _index = widget.initialTab;
+  }
 
   final List<Widget> _tabs = const [
     StoreScreen(),
@@ -28,13 +36,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return MultiProvider(
-      providers: [
-        ChangeNotifierProvider(create: (_) => ProductsProvider()),
-        ChangeNotifierProvider(create: (_) => CartProvider()),
-        ChangeNotifierProvider(create: (_) => OrdersProvider()),
-      ],
-      child: Scaffold(
+    return Scaffold(
         appBar: AppBar(
           title: const Text('Rapid Cart'),
           actions: [
@@ -61,8 +63,7 @@ class _HomeScreenState extends State<HomeScreen> {
             NavigationDestination(icon: Icon(Icons.person_outline), selectedIcon: Icon(Icons.person), label: 'Profile'),
           ],
         ),
-      ),
-    );
+      );
   }
 }
 
